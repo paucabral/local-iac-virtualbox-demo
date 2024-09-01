@@ -1,0 +1,14 @@
+---
+- name: Sample ping
+  hosts: all
+  vars_files:
+    - group_vars/credentials.yaml
+
+  tasks:
+    - name: Ping nodes
+      ping:
+      register: ping_result
+
+    - name: Display ping result
+      debug:
+        msg: "{{ ping_result }}"

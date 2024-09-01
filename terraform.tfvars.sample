@@ -1,0 +1,4 @@
+ubuntu_image = "https://app.vagrantup.com/ubuntu/boxes/jammy64/versions/20240823.0.1/providers/virtualbox/unknown/vagrant.box"
+centos_image = "https://app.vagrantup.com/bento/boxes/centos-stream-9/versions/202404.23.0/providers/virtualbox/amd64/vagrant.box"
+common_network_adapter_type = "hostonly"
+common_network_host_interface = "vboxnet0"
