@@ -10,4 +10,9 @@ resource "virtualbox_vm" "node" {
     type           = var.network_adapter_type
     host_interface = var.network_host_interface
   }
+
+  network_adapter {
+    type           = "nat"
+    host_interface = "NatNetwork"
+  }
 }
