@@ -1,7 +1,16 @@
 #!/bin/bash
 
 echo -e '\033[1mLoad Environment Variables...\033[0m'
-source .env
+ENV_FILE=".env"
+
+# Check if the .env file exists
+if [ -f "$ENV_FILE" ]; then
+    # Source the .env file to export variables
+    export $(grep -v '^#' "$ENV_FILE" | xargs)
+    echo ".env file found and variables exported."
+else
+    echo ".env file not found."
+fi
 echo "-----------------------------------"
 
 echo -e '\033[1mTerraform Init...\033[0m'
