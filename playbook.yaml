@@ -18,6 +18,12 @@
         name: firewalld
         state: stopped
     
+    - name: Enable SSH in firewall
+      firewalld:
+        service: ssh
+        permanent: true
+        state: enabled
+    
     - name: Block ICMP ping in firewall
       firewalld:
         icmp_block: echo-request
