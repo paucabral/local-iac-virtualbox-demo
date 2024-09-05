@@ -12,3 +12,19 @@
     - name: Display ping result
       debug:
         msg: "{{ ping_result }}"
+    
+    - name: Stop firewall service
+      service:
+        name: firewalld
+        state: stopped
+    
+    - name: Block ICMP ping in firewall
+      firewalld:
+        icmp_block: echo-request
+        permanent: true
+        state: enabled
+
+    - name: Enable firewall service
+      service:
+        name: firewalld
+        state: started
