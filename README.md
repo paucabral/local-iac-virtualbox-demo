@@ -1,7 +1,5 @@
 # # Terraform and Ansible Demo w/ VirtualBox
 
-Terraform: Uses [Virtualbox provider by terra-farm](https://registry.terraform.io/providers/terra-farm/virtualbox/latest/docs).
-
 ## Pre-requisites
 - [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
@@ -67,3 +65,6 @@ Terraform: Uses [Virtualbox provider by terra-farm](https://registry.terraform.i
 
 ### For Windows Based Machines
 <img src="_assets/for_windows.png">
+
+## Credits
+Terraform Provider used: [Virtualbox provider by terra-farm](https://registry.terraform.io/providers/terra-farm/virtualbox/latest/docs).
