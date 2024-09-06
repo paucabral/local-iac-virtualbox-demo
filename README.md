@@ -1,4 +1,4 @@
-# # Terraform and Ansible Demo w/ VirtualBox
+# Terraform and Ansible Demo w/ VirtualBox
 
 ## Pre-requisites
 - [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
