@@ -66,5 +66,8 @@
 ### For Windows Based Machines
 <img src="_assets/for_windows.png">
 
+### `automate.sh` Overivew
+<img src="_assets/automate.sh.png">
+
 ## Credits
 Terraform Provider used: [Virtualbox provider by terra-farm](https://registry.terraform.io/providers/terra-farm/virtualbox/latest/docs).
