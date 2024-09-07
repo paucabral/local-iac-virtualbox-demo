@@ -14,6 +14,11 @@
     ```
 - *A VirtualBox host only network adapter must be created and identified prior to running the automation scripts.*
 
+- *For Windows users, running the following command prior to execution of `terraform apply` will be needed. This is to add the `VBoxManage` CLI command in the shell path.*
+    ```
+    $env:PATH = $env:PATH + ";C:\Program Files\Oracle\VirtualBox"
+    ```
+
 ## Usage
 1. Provisioning using **Terraform**:
     1. Create a `terraform.tfvars` file using `terraform.tfvars.sample` as the base. Modify the values accordingly.
